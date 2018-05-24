@@ -1,0 +1,12 @@
+:contract: 
+  :from: Contract.java.shadow
+  :to: ${screen_name_first_letter_uppercase}Contract.java
+:screen: 
+  :from: Activity.java.shadow
+  :to: ${screen_name_first_letter_uppercase}Activity.java
+:presenter: 
+  :from: Presenter.java.shadow
+  :to: ${screen_name_first_letter_uppercase}Presenter.java
+:layout: 
+  :from: layout_activity.xml.shadow
+  :to: shadow_p_${screen_name_downcase}_activity.xml

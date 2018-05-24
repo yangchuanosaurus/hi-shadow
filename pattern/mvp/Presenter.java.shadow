@@ -1,0 +1,3 @@
+public class ${screen_name}Presenter extends Presenter<LoginContract.View> implements ${screen_name}Contract.Presenter {
+    // Actions or Callbacks between prototype and function modules
+}

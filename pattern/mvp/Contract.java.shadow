@@ -1,0 +1,11 @@
+public interface ${screen_name}Contract {
+
+    interface View extends IView {
+        // Prototype View Effects Behaviors
+    }
+
+    interface Presenter extends IPresenter<View> {
+        // Presenter of ${screen_name}Contract.View
+    }
+
+}
