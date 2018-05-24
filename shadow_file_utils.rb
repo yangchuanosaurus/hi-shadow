@@ -19,6 +19,14 @@ module ShadowSolution
 				file.puts dash.to_yaml
 			end
         end
+
+        def self.write_content(file, content)
+            mode = "w"
+            FileUtils.mkdir_p(File.dirname(file)) if !exists?(file)
+			File.open(file, mode) do |file|
+				file.puts content
+			end
+        end
         
         def self.load(relative_file_path)
             File.read(relative_file_path)

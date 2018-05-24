@@ -1,3 +1,5 @@
+package ${package_name}.prototype.${screen_name_downcase};
+
 public interface ${screen_name}Contract {
 
     interface View extends IView {
