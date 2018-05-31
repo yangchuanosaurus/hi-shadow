@@ -2,7 +2,8 @@ require_relative 'shadow_file_utils'
 
 module ShadowSolution
     
-    PATTERN_BASE_PATH = "./pattern"
+    PATTERN_RELATIVE_PATH = "/../.././pattern"
+    PATTERN_BASE_PATH = File.dirname(__FILE__) + PATTERN_RELATIVE_PATH
     PATTERN_RECIPE = "./recipe.yml"
 
     class Pattern

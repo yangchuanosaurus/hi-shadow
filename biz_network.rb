@@ -63,6 +63,8 @@ Environment.group(env_group_default).using("QA").run(action_auth_code) do |heade
             headers.each do |h_k, h_v|
                 printf "%30s= %s\n", h_k, h_v
             end
+            puts "Response Body:"
+            puts body.inspect
         else
             puts "[Biz] error #{error_code}"
         end

@@ -59,10 +59,8 @@ class RunAction
         response = HTTParty.send(action.http_method, remote_url, follow_redirects: action.redirects)
 
         puts "<=== #{action.action_alias}"
-
         printf "%+20s %s\n", 'Response Code:', response.code
         printf "%+20s %s\n", 'Response Message:', response.message
-        
         yield(response.headers, response.body) if !block.nil?
         response
     end
