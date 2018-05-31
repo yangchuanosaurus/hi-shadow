@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.email = '355592261@qq.com'
   s.executables = ['shadow']
+  # s.executables = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.files = `git ls-files -z`.split("\0")
   s.homepage = 'https://github.com/yangchuanosaurus/hi-shadow'
   s.summary = 'Shadow of Zero-Solution'

@@ -1,6 +1,13 @@
-public class ${screen_name}Activity extends AppCompatActivity implements ${screen_name}Contract.View {
+package ${package_name}.prototype.${screen_name};
 
-    private ${screen_name}Contract.Presenter presenter;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import ${package_name}.R;
+
+public class ${screen_name_first_letter_uppercase}Activity extends AppCompatActivity implements ${screen_name_first_letter_uppercase}Contract.View {
+
+    private ${screen_name_first_letter_uppercase}Contract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

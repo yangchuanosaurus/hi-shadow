@@ -1,13 +1,16 @@
 package ${package_name}.prototype.${screen_name_downcase};
 
-public interface ${screen_name}Contract {
+import ${package_name}.prototype.IPresenter;
+import ${package_name}.prototype.IView;
+
+public interface ${screen_name_first_letter_uppercase}Contract {
 
     interface View extends IView {
         // Prototype View Effects Behaviors
     }
 
     interface Presenter extends IPresenter<View> {
-        // Presenter of ${screen_name}Contract.View
+        // Presenter of ${screen_name_first_letter_uppercase}Contract.View
     }
 
 }

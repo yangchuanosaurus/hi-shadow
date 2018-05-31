@@ -1,5 +1,7 @@
 package ${package_name}.prototype.${screen_name_downcase};
 
-public class ${screen_name}Presenter extends Presenter<LoginContract.View> implements ${screen_name}Contract.Presenter {
+import ${package_name}.prototype.Presenter;
+
+public class ${screen_name_first_letter_uppercase}Presenter extends Presenter<${screen_name_first_letter_uppercase}Contract.View> implements ${screen_name_first_letter_uppercase}Contract.Presenter {
     // Actions or Callbacks between prototype and function modules
 }
