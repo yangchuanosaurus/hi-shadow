@@ -1,12 +1,20 @@
 public class ${screen_name}Activity extends AppCompatActivity implements ${screen_name}Contract.View {
+
     private ${screen_name}Contract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.p_${screen_name_downcase}_activity);
+        setContentView(R.layout.shadow_p_${screen_name_downcase}_activity);
 
-        presenter = new ${screen_name}Presenter();
-        presenter.setView(this);
+        presenter = new ${screen_name_first_letter_uppercase}Presenter();
+        presenter.attachView(this);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (null != presenter) presenter.detachView();
+    }
+    
 }

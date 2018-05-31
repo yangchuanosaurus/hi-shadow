@@ -5,6 +5,6 @@ require_relative 'shadow_prototype'
 
 ShadowSolution::Package.set("com.acitve.passport")
 
-ShadowSolution::Prototype.using(ShadowSolution::MVP)
+ShadowSolution::Prototype.using("mvp")
 
 ShadowSolution::Prototype.create_screen("login")

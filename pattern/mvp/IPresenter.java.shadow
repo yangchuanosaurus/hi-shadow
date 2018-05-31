@@ -1,0 +1,6 @@
+package ${package_name}.prototype;
+
+public interface IPresenter<T extends IView> {
+    void attachView(T view);
+    void detachView();
+}
